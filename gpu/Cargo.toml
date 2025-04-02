@@ -6,12 +6,7 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.97"
 env_logger = "0.11.8"
-futures = { version = "0.3", default-features = false, features = [
-  "std",
-  "executor",
-] }
-pollster = "0.4.0"
-wgpu = { version = "24.0.3", features = ["spirv", "vulkan-portability"] }
+ash = "0.38.0"
 
 [build-dependencies]
 spirv-builder = { git = "https://github.com/Rust-GPU/rust-gpu", rev = "698f10ac14b7c952394ac5620004e4e973308902" }
